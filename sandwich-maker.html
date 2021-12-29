@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sandwich Maker!</title>
+    <link rel="stylesheet" href="css/sandwich-maker.css">
+</head>
+<body>
+<fieldset>
+    <legend>Choose Your Options</legend>
+
+    <h2>Choose your Bread:</h2>
+    <div class="choosers" id="breads">
+        <button type="button" id="btn--Rhye"> Rhye </button>
+        <button type="button" id="btn--Wheat"> Wheat </button>
+        <button type="button" id="btn--White"> White </button>
+        <button type="button" id="btn--JalapenoCheddar"> Jalapeno Cheddar </button>
+    </div>
+
+    <h2>Choose your Meat:</h2>
+    <div class="choosers" id="meats">
+        <button type="button" id="btn--Turkey"> Turkey </button>
+        <button type="button" id="btn--Ham"> Ham </button>
+        <button type="button" id="btn--tuna"> Tuna </button>
+        <button type="button" id="btn--bologna"> Bologna </button>
+    </div>
+
+    <h2>Choose your Cheese:</h2>
+    <div class="choosers" id="cheeses">
+        <button type="button" id="btn--American"> American </button>
+        <button type="button" id="btn--Colby"> Colby </button>
+        <button type="button" id="btn--Jack"> Jack </button>
+        <button type="button" id="btn--Cheddar"> Cheddar </button>
+    </div>
+
+    <h2>Choose your Condiments:</h2>
+    <div class="choosers" id="condiments">
+        <button type="button" id="btn--Ketchup"> Ketchup </button>
+        <button type="button" id="btn--Mayo"> Mayo </button>
+        <button type="button" id="btn--Mustard"> Mustard </button>
+        <button type="button" id="btn--SpicyMustard"> Spicy Mustard </button>
+        <button type="button" id="btn--PB"> Peanut Butter </button>
+    </div>
+
+    <h2>Choose your Veggies:</h2>
+    <div class="choosers" id="veggies">
+        <button type="button" id="btn--Lettuce"> Lettuce </button>
+        <button type="button" id="btn--Tomato"> Tomato </button>
+        <button type="button" id="btn--Pickle"> Pickle </button>
+        <button type="button" id="btn--Sprouts"> Sprouts </button>
+    </div>
+
+</fieldset>
+
+<div id="finalSandwichEl">
+</div>
+<div id="totalEl">
+</div>
+
+<br>
+<div id="instructions">
+    <h2>Instructions</h2>
+    <p>Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a `Sandwich` module, then create the following as individual modules, using IIFE syntax, to augment `Sandwich`: </p>
+
+    <ol>
+        <li>bread</li>
+        <li>meat</li>
+        <li>cheese</li>
+        <li>condiments</li>
+        <li>veggies</li>
+    </ol>
+
+    <hr>
+    <p>Your project should have one HTML file that has:</p>
+    <ul>
+        <li> a section of options for each sandwich part </li>
+        <li> the ability to select multiple, or zero, choices for each section (such as turkey _and_ bacon, or "no meat") </li>
+        <li> an empty DOM element into which the final sandwich order and its cost will be inserted </li>
+    </ul>
+    <p> The ingredient choices should be stored as JS objects that contain the ingredients as keys and their cost as the value. `{"turkey": 0.90, "bacon": 1.50}` </p>
+    <p> Make sure the ingredient objects cannot be accessed by the other modules except through an accessor (getter) method. </p>
+    <p> Each IIFE should expose, in its public interface, a method named `add{ingredient}` (e.g. `addMeat` or `addVeggies`) that accepts a single argument. That argument's value should be the ingredient selected by the user.</p>
+    <p> You should also create an additional JavaScript file that handles interacting with the form elements and determining which method should be called. </p>
+    <p> Don't worry about exposing the prices to the user until you display the final cost. This is just an exercise, not a business model.</p>
+</div>
+
+	<script src="js/SandwichMaker.js"></script>
+
+</body>
+</html>

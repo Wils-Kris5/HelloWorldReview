@@ -1,0 +1,61 @@
+* {
+    font-family: Tahoma, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: transparent;
+}
+/***************FIELDSET CSS***************/
+legend {
+    font-size: 1.5rem;
+    background-color: khaki;
+    padding: 10px 40px 0;
+    border-radius: 25px;
+    letter-spacing: .4rem;
+    word-spacing: .4rem;
+    border-color: khaki;
+    text-align: center;
+}
+fieldset {
+    background-color: khaki;
+    padding-left: 35px;
+    border-radius: 40px 0;
+    border: 1px solid khaki;
+    margin-bottom: 30px;
+}
+fieldset h2 {
+    color: midnightblue;
+    font-size: 1.25rem;
+    word-spacing: .4rem;
+    letter-spacing: .4rem;
+    text-decoration: underline;
+    margin: 30px 0 7px;
+    font-weight: bold;
+}
+
+#totalEl {
+    border-top: 1px solid black;
+    color: red;
+    font-size: 1.15rem;
+    font-weight: 900;
+}
+
+/***************BUTTON CSS***************/
+[type="button"]{
+    color: lightyellow;
+    background-color: darkred;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 2px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    border: 2px solid darkred;
+}
+[type="button"]:hover {
+    color: brown;
+    border-radius: 10px 0;
+    background-color: white;
+    border: 2px solid darkred;
+}
