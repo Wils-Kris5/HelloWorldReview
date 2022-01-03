@@ -27,7 +27,7 @@ var SandwichMaker = (function(maker) {
     // Private variable to store the different bread prices
     var breadPrices= {"Rhye":     2.00,
         "Wheat":    2.75,
-        "White":    3.75,
+        "White":    1.75,
         "JalapenoCheddar":    2.50};
 
     // Augment the original object with another method
