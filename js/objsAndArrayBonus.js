@@ -63,8 +63,7 @@ console.log(getOlder(dogs));
 //         ]
 
 
-//Write a function, `washCars()` that takes in a array of car objects and sets
-//the boolean properties of `isDirty` to false.
+
 
   //  Example input:
 
@@ -88,6 +87,55 @@ console.log(getOlder(dogs));
             isDirty: true
         }
     ]
-function washCars(){
+///Write a function, `washCars()` that takes in a array of car objects and sets
+// the boolean properties of `isDirty` to false.
+function washCars(array){
+      array.forEach((car)=> car.isDirty=false)
+    return array;
 
 }
+
+console.log(washCars(cars));
+
+
+
+//
+//     Example Input:
+
+   var userObjs = [
+        {
+            isAdmin: true,
+            email: 'user1@email.com'
+        },
+        {
+            isAdmin: true,
+            email: 'user2@email.com'
+        },
+        {
+            isAdmin: false,
+            email: 'user3@email.com'
+        }
+    ]
+// Write a function, `adminList()` that takes in an array of user objects and
+// returns a count of all admins based on the `isAdmin` property.
+// Refactor to
+// return an array of admin-only user emails.
+
+function adminList(array){
+      let count = 0;
+      let adminEmails = [];
+      let adminUsers = []
+   array.forEach(function (user){
+      if(user.isAdmin == true){
+          count++
+          adminEmails.push(user.email)
+          adminUsers.push(user)
+      }
+    });
+   return count+ " list of admins " +adminEmails
+
+}
+
+console.log(adminList(userObjs));
+// Refactor again to return an array
+// of user objects that are admins.
