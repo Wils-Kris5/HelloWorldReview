@@ -17,3 +17,6 @@ function squareDigits(num) {
 }
 
 console.log(squareDigits(93));
+
+
+
